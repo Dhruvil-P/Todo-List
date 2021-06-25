@@ -1,0 +1,58 @@
+body .nav{
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    height: 10vh;
+    background: transparent;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+body .nav img{
+    width: 4%;
+    height: 70px;
+    transform: rotate(9.64deg);
+}
+
+body .nav ul{
+    list-style: none;
+    display: flex;
+}
+
+body .nav ul li{
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+body .nav ul li a{
+    text-decoration: none;
+    color: #DEEDF0;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+body .nav ul li a:hover{
+    color: #B6C9F0;
+}
+
+body .nav .pen-animation{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+body .nav .pen-animation p{
+    font-size: 30px;
+    color: #DEEDF0;
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 10px 6px rgba(16,16,16,0.4),
+    1px 15px 10px rgba(16,16,16,0.2),
+    1px 20px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}

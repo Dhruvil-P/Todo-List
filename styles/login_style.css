@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background: #f6f6f6;
+}
+
+.home{
+  width: 5%;
+  height: 5%;
+  background: #161d6f;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.home a{
+  text-decoration: none;
+  color: #f6f6f6;
+  font-size: 20px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+body .sign-in-circle{
+  width: 100%;
+  height: 100vh;
+  background: #161d6f;
+  -webkit-clip-path: circle(50% at 90% 30%);
+          clip-path: circle(50% at 90% 30%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .sign-in-circle .toggle-sign-up a{
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 2rem;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+body .sign-in-circle .toggle-sign-up a:hover::after{
+  width: 100%;
+}
+
+body .sign-in-circle .toggle-sign-up a::after{
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  position: absolute;
+  top: 120%;
+  right: 0%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .sign-in-circle .sign-in-image{
+  width: 45vw;
+  height: 45vh;
+  position: absolute;
+  right: 0%;
+  top: 20%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-animation: bubble 2s infinite ease-in-out;
+          animation: bubble 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes bubble {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+}
+
+@keyframes bubble {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+}
+
+body .sign-in-container{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .sign-in-container h1{
+  color: #98ded9;
+  text-align: center;
+  margin: 5vh 0;
+  font-size: 3rem;
+  pointer-events: none;
+}
+
+body .sign-in-container .Main{
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background: transparent;
+  -webkit-box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .sign-in-container .Main input{
+  margin: 2vh 0;
+  border: none;
+  outline: none;
+  width: 60%;
+  height: 15%;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+body .sign-in-container .Main input:focus{
+  border: 2px ridge #aef3ff;
+}
+
+body .sign-in-container .Main input:invalid{
+  border: 2px solid #fc5404;
+}
+
+body .sign-in-container .Main button{
+  height: 6vh;
+  width: 40%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #c7ffd8;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+body .sign-in-container .Main button:hover{
+  background: #9af1b4;
+}
+
+.alert, .error{
+  width: 100%;
+  height: 5vh;
+  background: #9af1b4;
+  position: absolute;
+  top: 0%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 300px;
+}
+
+.error{
+  background: coral;
+}

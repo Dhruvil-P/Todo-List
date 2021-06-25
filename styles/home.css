@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap%27');
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+box-sizing: border-box;
+}
+
+body{
+    background-image: url("../images/home.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body .nav + .animation{
+    width: 25vw;
+    height: 30vh;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.heading{
+    text-decoration: none;
+    font-size: 50px;
+    color: #3C8DAD;
+    border-right: solid 5px rgba(255,255,255,0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: animated-text 4s linear 1s 1 normal both,
+    animated-cursor 600ms linear infinite;
+}
+
+@keyframes animated-text{
+    from{
+        width: 0;
+    }
+    to{
+        width: 300px;
+    }
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{
+        border-right-color: rgba(255, 255, 255, 0);
+    }
+    to{
+        border-right-color: transparent;
+    }
+  }
+
+body .nav + .animation .social-media{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body .nav + .animation .social-media a{
+    text-decoration: none;
+}
+
+body .nav + .animation .social-media a .twitter{
+    color: #1CC5DC;
+}
+
+body .nav + .animation .social-media a .github{
+    color: black;
+}
+
+body .nav + .animation .social-media a i:hover{
+    color: #3C8DAD;
+}
+
+body .nav + .animation .social-media a i:hover{
+    color: #3EDBF0;
+}
+
+body .nav + .animation .discord{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body .nav + .animation .discord i{
+    color: #04009A;
+}
