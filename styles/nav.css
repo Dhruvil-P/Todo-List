@@ -4,6 +4,7 @@ body .nav{
     width: 100vw;
     height: 10vh;
     background: transparent;
+    box-shadow: 0px 25px 50px rgba(16,16,16,0.2);
     display: flex;
     justify-content: start;
     align-items: center;
@@ -12,7 +13,6 @@ body .nav{
 body .nav img{
     width: 4%;
     height: 70px;
-    transform: rotate(9.64deg);
 }
 
 body .nav ul{
@@ -23,18 +23,23 @@ body .nav ul{
 body .nav ul li{
     margin: 10px;
     cursor: pointer;
+    background: transparent;
+    box-shadow: 0px 25px 50px rgb(255, 255, 255) inset;
+    border-radius: 10px;
+    padding: 5px;
     transition: 0.3s;
 }
 
 body .nav ul li a{
     text-decoration: none;
-    color: #DEEDF0;
+    color: #0A1931;
     font-size: 20px;
     transition: 0.5s;
 }
 
-body .nav ul li a:hover{
-    color: #B6C9F0;
+body .nav ul li:hover{
+    box-shadow: 0px 25px 50px rgb(196, 196, 196) inset;
+
 }
 
 body .nav .pen-animation{
@@ -48,7 +53,7 @@ body .nav .pen-animation{
 
 body .nav .pen-animation p{
     font-size: 30px;
-    color: #DEEDF0;
+    color: #0A1931;
     text-shadow: 1px 1px 1px #919191,
     1px 2px 1px #919191,
     1px 10px 6px rgba(16,16,16,0.4),

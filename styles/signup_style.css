@@ -12,7 +12,15 @@ body {
   background: #f6f6f6;
 }
 
-.home{
+body .sign-up-circle{
+  width: 100%;
+  height: 100vh;
+  background: #161d6f;
+  -webkit-clip-path: circle(50% at 90% 30%);
+          clip-path: circle(50% at 90% 30%);
+}
+
+body .sign-up-circle .home{
   width: 5%;
   height: 5%;
   background: #161d6f;
@@ -24,22 +32,12 @@ body {
   align-items: center;
 }
 
-.home a{
+body .sign-up-circle .home a{
   text-decoration: none;
   color: #f6f6f6;
   font-size: 20px;
   cursor: pointer;
   padding-left: 10px;
-}
-
-body .sign-up-circle{
-  width: 100%;
-  height: 100vh;
-  background: #161d6f;
-  -webkit-clip-path: circle(50% at 90% 30%);
-          clip-path: circle(50% at 90% 30%);
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 body .sign-up-circle .toggle-sign-in a{
@@ -153,6 +151,7 @@ body .sign-up-container .Main input{
   border-radius: 10px;
   font-weight: 500;
   font-size: 1rem;
+  position: relative;
 }
 
 body .sign-up-container .Main input:focus{
@@ -200,5 +199,11 @@ body .sign-up-container .Main button:hover{
 
 .error{
   background: coral;
+}
+
+.show, .hide{
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
 /*# sourceMappingURL=style.css.map */

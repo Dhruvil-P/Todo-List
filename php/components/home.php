@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
     $loggedin = true;
 }else{
@@ -18,13 +19,9 @@ echo '<!DOCTYPE html>
 </head>
 <body>';
     require "./nav.php";    
-    echo '<div class="animation">';
-        if ($loggedin){
-        echo '<a href="./todo.php" class="heading">Todo List</a>';
-        }else{
-        echo '<a href="#" class="heading">Todo List</a>';
-        }
-        echo '<div class="social-media">
+    echo '<div class="animation">
+        <a href="#" class="heading">Todo List</a>
+         <div class="social-media">
             <a href="https://twitter.com/Dhruvil69422716">
                 <i class="fab fa-twitter fa-3x twitter" ></i>
             </a>
@@ -36,6 +33,13 @@ echo '<!DOCTYPE html>
             <i class="fab fa-discord fa-3x discord-icon"></i>
             | DHRUVIL ✓#0785
         </div>
+    </div>
+
+    <div class="time">
+        <p class="hour"></p>
+        <p class="minute"></p>
+        <p class="seconds"></p>
+        <p class="ampm"></p>
     </div>
 
     <script src="../../js/app.js"></script>

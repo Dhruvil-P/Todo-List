@@ -12,34 +12,37 @@ body {
   background: #f6f6f6;
 }
 
-.home{
-  width: 5%;
-  height: 5%;
-  background: #161d6f;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.home a{
-  text-decoration: none;
-  color: #f6f6f6;
-  font-size: 20px;
-  cursor: pointer;
-  padding-left: 10px;
-}
-
 body .sign-in-circle{
   width: 100%;
   height: 100vh;
   background: #161d6f;
   -webkit-clip-path: circle(50% at 90% 30%);
           clip-path: circle(50% at 90% 30%);
-  -webkit-transition: 1s;
-  transition: 1s;
+}
+
+body .sign-in-circle .home{
+  width: 5%;
+  height: 5%;
+  background: #ffffff;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+body .sign-in-circle .home a{
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 2rem;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 body .sign-in-circle .toggle-sign-up a{

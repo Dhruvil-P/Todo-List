@@ -49,6 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <script src="https://kit.fontawesome.com/b462a633b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../styles/signup_style.css">
 </head>
 <body>
@@ -65,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
     ?>
 
-    <div class="home"><a href="../components/home.php">HOME</a></div>
+    <p class="home"><a href="../components/home.php">Home</a></p>
 
     <div class="sign-up-circle">
         <p class="toggle-sign-in"><a href="./login.php">Login</a></p>
@@ -81,6 +82,18 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <button type="submit" id="submit1">Create Account</button>
         </form>
     </div>
+    <!-- <i class="fas fa-eye fa-2x show"></i>
+    <i class="fas fa-eye-slash fa-2x hide"></i>
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+
+    <script>
+        $(document).ready(()=>{
+            $(".show").click(()=>{
+                alert(hi1)
+            });
+        });
+    </script> -->
 
 </body>
 </html>

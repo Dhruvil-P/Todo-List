@@ -5,7 +5,7 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
     $loggedin = false;
 }
 echo '<div class="nav">
-        <img src="../../images/Untitled (1).png" alt="">
+        <img src="../../images/logo.png" alt="">
         <ul>';
 
             if (!$loggedin){

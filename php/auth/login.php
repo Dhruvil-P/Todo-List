@@ -22,17 +22,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $_SESSION['username'] = $username;
                 header("location: ../components/todo.php");
             }
-            elseif (empty($password)) {
-                $showError = "Passsword cannot be empty!";
-            }
-            else{
-                $showError = "Invalid Credentials!";
-            }
         }
 
     }
     elseif (empty($username)) {
         $showError = "Username cannot be empty!";
+    }
+    elseif (empty($password)) {
+        $showError = "Passsword cannot be empty!";
     }
     else{
         $showError = "Invalid Credentials!";
@@ -48,6 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script src="https://kit.fontawesome.com/b462a633b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../styles/login_style.css">
 </head>
 <body>
@@ -64,9 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
     ?>
 
-    <div class="home">
-        <a href="../components/home.php">HOME</a>
-    </div>
+    <p class="home"><a href="../components/home.php">Home</a></p>
     
     <div class="sign-in-circle">
         <p class="toggle-sign-up"><a href="./signup.php">Create Account</a></p>
@@ -81,5 +77,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <button type="submit" id="submit2">Login</button>
         </form>
     </div>
+
+    <!-- <i class="fas fa-eye fa-2x show"></i>
+    <i class="fas fa-eye-slash fa-2x hide"></i>
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+
+    <script>
+
+    </script> -->
+
 </body>
 </html>

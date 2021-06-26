@@ -13,13 +13,12 @@ if(isset($_POST['todo'])){
     $users_row = $user_id->fetch(PDO::FETCH_ASSOC);
     $id = $users_row['id'];
 
-    $todoCheck = $con->query("SELECT * FROM todo_table WHERE user_id = $id");
-    $todo_row = $todoCheck->fetch(PDO::FETCH_ASSOC);
-    $storedTodo = $todo_row['todo_item'];
+    $todoCheck = $con->query("SELECT * FROM todo_table WHERE todo_item = '$todo' AND user_id = $id");
+    $todo_row = $todoCheck->rowCount();
 
     if(empty($todo)){
         header("Location: ../components/todo.php?mess=error");
-    }elseif ($todo == $storedTodo){
+    }elseif ($todo_row > 0){
         header("Location: ../components/todo.php?mess=exists");
     }
     else {
